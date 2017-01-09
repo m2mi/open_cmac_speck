@@ -36,4 +36,6 @@ int cmac_init(cmac_ctx *ctx, const unsigned char *userKey, int key_bits);
 
 unsigned char * cmac_update(cmac_ctx *ctx, const unsigned char *msg, size_t msg_len);
 
+void print_hex(const unsigned char *s);
+
 #endif
