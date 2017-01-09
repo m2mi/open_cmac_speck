@@ -12,13 +12,12 @@ This repository contains a C implementation of a keyed-hash message authenticati
 
 ###Usage
 
-    unsigned char * digest = NULL;
     cmac_ctx ctx;
-    
     unsigned char * key = (unsigned char *)"01234567890123456789012345678901";
     unsigned char * message = (unsigned char *)"The quick brown fox jumps over the lazy dog";
     
     /* Initialize the context */
   	cmac_init(&ctx, key, 128);
+    
   	/* Hash the message */
-  	digest = cmac_update(&ctx, message, strlen ((const char *)message));
+  	unsigned char * digest = cmac_update(&ctx, message, strlen ((const char *)message));
