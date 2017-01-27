@@ -19,4 +19,4 @@ build:
 	@mkdir -p bin
 
 clean:
-	rm -rf bin/https src/main/c/*.o
+	rm -rf bin/cmac src/main/c/*.o
